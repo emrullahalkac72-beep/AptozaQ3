@@ -6,8 +6,7 @@ Güvenlik düzeltmeleri öncelikli olarak en son kararlı sürüm için yayınla
 
 | Sürüm | Destek |
 |---|---|
-| 1.0.x (en son) | ✅ Aktif |
-| 1.0.6 öncesi | ❌ Desteklenmez |
+| 1.0.0 (en son) | ✅ Aktif |
 | Geliştirme (`main`) | ✅ Düzeltme kabul edilir, garanti verilmez |
 
 ## Güvenlik açığı bildirimi
