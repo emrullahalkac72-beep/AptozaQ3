@@ -86,7 +86,7 @@ almak sizin sorumluluğunuzdadır.
 
 Gizlilikle ilgili sorular için GitHub üzerinden iletişime geçin:
 
-**https://github.com/emralkac21**
+**https://github.com/emrullahalkac72-beep**
 
 Güvenlik açıkları için [SECURITY.md](../SECURITY.md) kullanın.
 

@@ -1,17 +1,19 @@
 # Ekran Görüntüleri
 
-Bu klasör README ve sürüm notlarında kullanılacak görselleri barındırır.
-Görselleri ekledikten sonra aşağıdaki adları kullanmanız önerilir.
+Bu klasör README ve sürüm notlarında kullanılan ekran görüntülerini barındırır.
+Uygulamadan alınmış mevcut ekran görüntüleri aşağıdadır.
 
-## Önerilen dosyalar
+## Mevcut ekran görüntüleri
 
-| Dosya | İçerik | Önerilen boyut |
+| Dosya | İçerik |
 |---|---|---|
-| `record.png` | Kayıt sekmesi ve kayıt ayarları | 1600×900 |
-| `draw.png` | Çizim araç paneli ve `Kalem` çizimi | 1600×900 |
-| `timeline.png` | Timeline, klipler ve geçişler | 1600×900 |
-| `audio.png` | Ses editörü ve efekt paneli | 1600×900 |
-| `image-to-video.png` | Görselden video aracı | 1600×900 |
+| `Screenshot_1.png` | Kayıt ve kaynak ayarları |
+| `Screenshot_2.png` | Video düzenleme |
+| `Screenshot_3.png` | Timeline editörü |
+| `Screenshot_4.png` | Ses editörü |
+| `Screenshot_5.png` | Uygulama ayarları |
+| `Screenshot_6.png` | Ekran çizim araçları |
+| `Screenshot_7.png` | Görselden video ve efektler |
 
 ## Kurallar
 
@@ -27,8 +29,8 @@ Görselleri ekledikten sonra aşağıdaki adları kullanmanız önerilir.
 `README.md` içindeki **Ekran görüntüleri** bölümüne:
 
 ```markdown
-![Kayıt sekmesi](docs/screenshots/record.png)
-![Timeline](docs/screenshots/timeline.png)
+![Kayıt sekmesi](docs/screenshots/Screenshot_1.png)
+![Timeline](docs/screenshots/Screenshot_3.png)
 ```
 
 veya yan yana:
@@ -36,13 +38,13 @@ veya yan yana:
 ```markdown
 | Kayıt | Timeline |
 |---|---|
-| ![Kayıt](docs/screenshots/record.png) | ![Timeline](docs/screenshots/timeline.png) |
+| ![Kayıt](docs/screenshots/Screenshot_1.png) | ![Timeline](docs/screenshots/Screenshot_3.png) |
 ```
 
 ## Sürüm notlarına ekleme
 
 ```markdown
-![AptozaQ3 Timeline](https://raw.githubusercontent.com/emralkac21/AptozaQ3/main/docs/screenshots/timeline.png)
+![AptozaQ3 Timeline](https://raw.githubusercontent.com/emrullahalkac72-beep/AptozaQ3/main/docs/screenshots/Screenshot_3.png)
 ```
 
 Görsel eklerken telif hakkına ve ekran görüntüsündeki içeriklerin gizliliğine

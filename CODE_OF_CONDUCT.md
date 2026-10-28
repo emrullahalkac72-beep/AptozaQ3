@@ -59,7 +59,7 @@ dışı etkinliklerde görevli olmak.
 Kötüye kullanım, taciz veya başka bir kural ihlalini gördüğünüzde lütfen proje
 yöneticisine bildirin. Bildirim için:
 
-- GitHub: https://github.com/emralkac21
+- GitHub: https://github.com/emrullahalkac72-beep
 - Gizlilik gerekiyorsa GitHub üzerinden özel iletişim talep edin.
 
 Bildirimlerde mümkünse şunları belirtin:

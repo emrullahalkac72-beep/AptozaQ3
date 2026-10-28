@@ -6,8 +6,8 @@
 
 **Modern, hızlı ve tamamen yerel çalışan ekran kaydedici; video, ses ve timeline editörü.**
 
-[![CI](https://img.shields.io/github/actions/workflow/status/emralkac21/AptozaQ3/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/emralkac21/AptozaQ3/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/emralkac21/AptozaQ3?style=flat-square&label=release)](https://github.com/emralkac21/AptozaQ3/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/emrullahalkac72-beep/AptozaQ3/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/emrullahalkac72-beep/AptozaQ3/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/emrullahalkac72-beep/AptozaQ3?style=flat-square&label=release)](https://github.com/emrullahalkac72-beep/AptozaQ3/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2ea44f?style=flat-square)](LICENSE)
 [![Rust](https://img.shields.io/badge/Rust-2021-ed6a3a?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078d4?style=flat-square&logo=windows&logoColor=white)](#gereksinimler)
@@ -116,18 +116,15 @@ Uygulama **Rust + egui/eframe** ile geliştirilmiştir. Medya işleme için sist
 
 ## Ekran görüntüleri
 
-> [!NOTE]
-> Depoya ekran görüntüleri eklemek için `docs/screenshots/` klasörünü kullanın. Önerilen dosya adları ve README'ye ekleme biçimi `docs/screenshots/README.md` içinde açıklanmıştır.
-
-Planlanan görseller:
-
-| Alan | Önerilen dosya |
+| Kayıt | Video düzenleme |
 |---|---|
-| Kayıt sekmesi | `docs/screenshots/record.png` |
-| Çizim araçları | `docs/screenshots/draw.png` |
-| Timeline | `docs/screenshots/timeline.png` |
-| Ses efektleri | `docs/screenshots/audio.png` |
-| Görselden video | `docs/screenshots/image-to-video.png` |
+| ![Kayıt ve kaynak ayarları](docs/screenshots/Screenshot_1.png) | ![Video kırpma ve düzenleme](docs/screenshots/Screenshot_2.png) |
+| Timeline | Ses editörü |
+| ![Timeline editörü](docs/screenshots/Screenshot_3.png) | ![Ses editörü](docs/screenshots/Screenshot_4.png) |
+| Ayarlar | Ekran çizim araçları |
+| ![Uygulama ayarları](docs/screenshots/Screenshot_5.png) | ![Ekran üzeri çizim araçları](docs/screenshots/Screenshot_6.png) |
+| Görselden video | |
+| ![Görselden video ve efektler](docs/screenshots/Screenshot_7.png) | |
 
 ## Gereksinimler
 
@@ -172,26 +169,21 @@ Uygulamanın birincil hedefi Windows'tur. Linux/macOS üzerinde derleme mümkün
 
 ### Hazır sürüm
 
-1. [Releases](https://github.com/emralkac21/AptozaQ3/releases) sayfasını açın.
-2. En son `AptozaQ3-*-windows-x64.zip` dosyasını indirin.
-3. Arşivi bir klasöre çıkarın.
-4. FFmpeg'in `PATH`'te olduğundan emin olun.
-5. `AptozaQ3.exe` dosyasını çalıştırın.
+1. [Releases](https://github.com/emrullahalkac72-beep/AptozaQ3/releases) sayfasını açın.
+2. Yayımlanmış en son Windows dosyasını indirin. Şu anda yalnızca
+   `AptozaQ3_v1.0.0_Portable.exe` yayımlanmıştır.
+3. FFmpeg'in `PATH`'te olduğundan emin olun.
+4. İndirilen `.exe` dosyasını çalıştırın.
 
-İndirilen arşivi doğrulamak için:
-
-```powershell
-Get-FileHash .\AptozaQ3-1.0.6-windows-x64.zip -Algorithm SHA256
-```
-
-Değeri release'deki `SHA256SUMS.txt` ile karşılaştırın.
-
-> Depo şu anda kurulum paketi (MSI/NSIS) içermez; taşınabilir ZIP dağıtımı kullanılır.
+> Kaynak kodu `1.0.6` sürümündedir, ancak bu sürüm için henüz bir GitHub
+> Release yayımlanmamıştır. Güncel sürümü kullanmak için aşağıdaki kaynaktan
+> derleme adımlarını izleyin. Henüz yayımlanmış bir SHA256 checksum dosyası
+> yoktur.
 
 ### Kaynaktan derleme
 
 ```powershell
-git clone https://github.com/emralkac21/AptozaQ3.git
+git clone https://github.com/emrullahalkac72-beep/AptozaQ3.git
 cd AptozaQ3
 cargo build --release --locked
 ```
@@ -393,7 +385,7 @@ Topluluk kuralları: **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)**
 
 Güvenlik açıklarını herkese açık issue olarak bildirmeyin. Özel bildirim için GitHub Security Advisories kullanın:
 
-**https://github.com/emralkac21/AptozaQ3/security/advisories/new**
+**https://github.com/emrullahalkac72-beep/AptozaQ3/security/advisories/new**
 
 Ayrıntılar: **[SECURITY.md](SECURITY.md)**  
 Gizlilik: **[docs/PRIVACY.md](docs/PRIVACY.md)**
@@ -404,13 +396,13 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır. Ayrıntılar: **[LICENSE](LICE
 
 ## Sürüm geçmişi
 
-- Güncel sürüm notları: **[v1.0.6](docs/releases/v1.0.6.md)**
+- Kaynak kodu `1.0.6` sürüm notları: **[v1.0.6](docs/releases/v1.0.6.md)**
 - Tüm değişiklikler: **[CHANGELOG.md](CHANGELOG.md)**
-- Yayınlanan sürümler: **[GitHub Releases](https://github.com/emralkac21/AptozaQ3/releases)**
+- Yayınlanan sürümler: **[GitHub Releases](https://github.com/emrullahalkac72-beep/AptozaQ3/releases)**
 
 ## İletişim ve bağlantılar
 
-- GitHub: [@emralkac21](https://github.com/emralkac21)
+- GitHub: [@emrullahalkac72-beep](https://github.com/emrullahalkac72-beep)
 - YouTube: [Yazılım Hocası](https://www.youtube.com/@yaz%C4%B1l%C4%B1mhocas%C4%B1-p9c)
 - Tanıtım videosu: [youtu.be/epveUk2KvoQ](https://youtu.be/epveUk2KvoQ)
 

@@ -1,6 +1,6 @@
 # Değişiklik Günlüğü
 
-Bu proje [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) biçimini ve
+Bu proje [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) biçimini ve
 [Semantic Versioning](https://semver.org/lang/tr/) kurallarını izler.
 
 ## [Yayınlanmamış]
@@ -69,5 +69,5 @@ Bu proje [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) biçimini ve
 1.0.6 öncesine ait ayrıntılı sürüm notları bu depoda tutulmamıştır. Eski
 sürümler için GitHub Releases sayfasına bakın.
 
-[Yayınlanmamış]: https://github.com/emralkac21/AptozaQ3/compare/v1.0.6...HEAD
-[1.0.6]: https://github.com/emralkac21/AptozaQ3/releases/tag/v1.0.6
+[Yayınlanmamış]: https://github.com/emrullahalkac72-beep/AptozaQ3/compare/v1.0.0...HEAD
+[1.0.6]: docs/releases/v1.0.6.md

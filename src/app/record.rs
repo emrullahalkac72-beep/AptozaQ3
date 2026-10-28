@@ -538,8 +538,8 @@ impl App {
                 if ui.link("📺 YouTube: @yazılımhocası-p9c").clicked() {
                     webbrowser::open("https://www.youtube.com/@yaz%C4%B1l%C4%B1mhocas%C4%B1-p9c").ok();
                 }
-                if ui.link("💻 GitHub: github.com/emralkac21").clicked() {
-                    webbrowser::open("https://github.com/emralkac21").ok();
+                if ui.link("💻 GitHub: github.com/emrullahalkac72-beep").clicked() {
+                    webbrowser::open("https://github.com/emrullahalkac72-beep").ok();
                 }
                 if ui.link("🎬 Kullanım Kılavuzu videosu").clicked() {
                     webbrowser::open("https://youtu.be/epveUk2KvoQ").ok();

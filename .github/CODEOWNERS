@@ -1,21 +1,21 @@
 # CODEOWNERS
 
 # Varsayılan sahip
-* @emralkac21
+* @emrullahalkac72-beep
 
 # CI, release ve topluluk dosyaları
-/.github/ @emralkac21
+/.github/ @emrullahalkac72-beep
 
 # Dokümantasyon
-/docs/ @emralkac21
-README.md @emralkac21
-KULLANIM_KILAVUZU.md @emralkac21
-CHANGELOG.md @emralkac21
+/docs/ @emrullahalkac72-beep
+README.md @emrullahalkac72-beep
+KULLANIM_KILAVUZU.md @emrullahalkac72-beep
+CHANGELOG.md @emrullahalkac72-beep
 
 # Uygulama kaynakları
-/src/ @emralkac21
-Cargo.toml @emralkac21
-Cargo.lock @emralkac21
+/src/ @emrullahalkac72-beep
+Cargo.toml @emrullahalkac72-beep
+Cargo.lock @emrullahalkac72-beep
 
 # Betikler
-/scripts/ @emralkac21
+/scripts/ @emrullahalkac72-beep

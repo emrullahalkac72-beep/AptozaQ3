@@ -83,7 +83,7 @@ ffplay -version
 ## 3. Depoyu klonlama
 
 ```powershell
-git clone https://github.com/emralkac21/AptozaQ3.git
+git clone https://github.com/emrullahalkac72-beep/AptozaQ3.git
 cd AptozaQ3
 ```
 

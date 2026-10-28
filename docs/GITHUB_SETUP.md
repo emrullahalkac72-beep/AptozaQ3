@@ -19,7 +19,7 @@ git init
 git branch -M main
 git add .
 git commit -m "chore: ilk commit"
-git remote add origin https://github.com/emralkac21/AptozaQ3.git
+git remote add origin https://github.com/emrullahalkac72-beep/AptozaQ3.git
 git push -u origin main
 ```
 
@@ -161,7 +161,7 @@ tartışmaları için faydalıdır. Destek rehberi Discussions'a atıf yapar.
 Badge'ler şu depo adresini kullanır:
 
 ```text
-emralkac21/AptozaQ3
+emrullahalkac72-beep/AptozaQ3
 ```
 
 Depo adı/kullanıcı değişirse README, `Cargo.toml`, `CHANGELOG.md` ve

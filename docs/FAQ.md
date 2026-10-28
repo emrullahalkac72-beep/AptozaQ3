@@ -168,6 +168,6 @@ Evet. [CONTRIBUTING.md](../CONTRIBUTING.md) ve
 ### Hata nasıl bildiririm?
 
 GitHub issue formunu kullanın:
-https://github.com/emralkac21/AptozaQ3/issues/new/choose
+https://github.com/emrullahalkac72-beep/AptozaQ3/issues/new/choose
 
 Güvenlik açıkları için [SECURITY.md](../SECURITY.md).

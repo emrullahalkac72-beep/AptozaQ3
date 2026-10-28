@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         Hata bildirimi için teşekkürler. Lütfen aşağıdaki alanları doldurun.
-        Güvenlik açıklarını **bu formla açmayın**; [SECURITY.md](https://github.com/emralkac21/AptozaQ3/blob/main/SECURITY.md) kullanın.
+        Güvenlik açıklarını **bu formla açmayın**; [SECURITY.md](https://github.com/emrullahalkac72-beep/AptozaQ3/blob/main/SECURITY.md) kullanın.
 
   - type: input
     id: version

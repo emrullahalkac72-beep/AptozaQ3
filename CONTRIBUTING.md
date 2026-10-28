@@ -32,7 +32,7 @@ tabidir. Katkı sağlayarak bu kurallara uymayı kabul etmiş olursunuz.
 ### Kurulum
 
 ```powershell
-git clone https://github.com/emralkac21/AptozaQ3.git
+git clone https://github.com/emrullahalkac72-beep/AptozaQ3.git
 cd AptozaQ3
 cargo build
 cargo test --all-targets

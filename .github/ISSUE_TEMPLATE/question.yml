@@ -7,8 +7,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Soru sormadan önce [SSS](https://github.com/emralkac21/AptozaQ3/blob/main/docs/FAQ.md)
-        ve [Sorun Giderme](https://github.com/emralkac21/AptozaQ3/blob/main/docs/TROUBLESHOOTING.md)
+        Soru sormadan önce [SSS](https://github.com/emrullahalkac72-beep/AptozaQ3/blob/main/docs/FAQ.md)
+        ve [Sorun Giderme](https://github.com/emrullahalkac72-beep/AptozaQ3/blob/main/docs/TROUBLESHOOTING.md)
         belgelerine göz atın.
         Hata bildirimi için **Bug report**, özellik için **Feature request** kullanın.
 

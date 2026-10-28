@@ -15,7 +15,7 @@ AptozaQ3 ile ilgili yardım almak için aşağıdaki kanalları kullanabilirsini
 
 Hata bildirimi için GitHub issue formunu kullanın:
 
-**https://github.com/emralkac21/AptozaQ3/issues/new/choose**
+**https://github.com/emrullahalkac72-beep/AptozaQ3/issues/new/choose**
 
 Lütfen şunları ekleyin:
 
@@ -34,15 +34,15 @@ nasıl bir kullanıcı deneyimi istediğinizi açıklayın.
 
 ## Soru ve tartışma
 
-- GitHub Discussions etkinse orada konu açın.
-- Discussions kapalıysa **Question** issue şablonunu kullanın.
+- GitHub Discussions şu anda kapalıdır. Hata olmayan sorular için **Question**
+  issue şablonunu kullanın.
 - Hata olmayan genel sorular için issue açmadan önce README/FAQ kontrol edin.
 
 ## Güvenlik
 
 Güvenlik açıklarını herkese açık issue olarak bildirmeyin:
 
-**https://github.com/emralkac21/AptozaQ3/security/advisories/new**
+**https://github.com/emrullahalkac72-beep/AptozaQ3/security/advisories/new**
 
 Ayrıntılar: [SECURITY.md](SECURITY.md)
 

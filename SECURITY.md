@@ -22,11 +22,11 @@ Tercih edilen yöntem:
 
 Doğrudan bağlantı:
 
-**https://github.com/emralkac21/AptozaQ3/security/advisories/new**
+**https://github.com/emrullahalkac72-beep/AptozaQ3/security/advisories/new**
 
 Alternatif olarak GitHub profilinden özel iletişim talep edebilirsiniz:
 
-**https://github.com/emralkac21**
+**https://github.com/emrullahalkac72-beep**
 
 ### Bildirimde bulunması gerekenler
 
