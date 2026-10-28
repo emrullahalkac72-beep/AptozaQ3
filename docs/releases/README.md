@@ -7,7 +7,7 @@ GitHub etiketiyle birebir eşleşmelidir.
 
 | Sürüm | Dosya |
 |---|---|
-| v1.0.6 | [v1.0.6.md](v1.0.6.md) |
+| v1.0.0 | [v1.0.0.md](v1.0.0.md) |
 
 ## Yeni sürüm ekleme
 
