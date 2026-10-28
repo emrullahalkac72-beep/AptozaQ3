@@ -1,0 +1,124 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  windows-release:
+    name: Windows x64 release
+    runs-on: windows-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo
+        uses: Swatinem/rust-cache@v2
+
+      - name: Install FFmpeg
+        shell: pwsh
+        run: |
+          $missing = @()
+          foreach ($tool in @("ffmpeg", "ffprobe", "ffplay")) {
+            if (-not (Get-Command $tool -ErrorAction SilentlyContinue)) {
+              $missing += $tool
+            }
+          }
+          if ($missing.Count -gt 0) {
+            Write-Host "Eksik FFmpeg araçları: $($missing -join ', ') — Chocolatey ile kuruluyor..."
+            choco install ffmpeg -y --no-progress
+            $machine = [Environment]::GetEnvironmentVariable("Path", "Machine")
+            $user = [Environment]::GetEnvironmentVariable("Path", "User")
+            $env:Path = "$machine;$user"
+          }
+          ffmpeg -version
+          ffprobe -version
+          ffplay -version
+
+      - name: Validate release metadata
+        shell: pwsh
+        run: |
+          $tag = $env:GITHUB_REF_NAME
+          $version = $tag.TrimStart("v")
+          $manifest = Get-Content "Cargo.toml" -Raw
+          if ($manifest -notmatch '(?m)^version\s*=\s*"([^"]+)"') {
+            throw "Cargo.toml içinde sürüm bulunamadı."
+          }
+          if ($Matches[1] -ne $version) {
+            throw "Etiket ($version) ile Cargo.toml sürümü ($($Matches[1])) uyuşmuyor."
+          }
+          $notes = Join-Path "docs/releases" "$tag.md"
+          if (-not (Test-Path $notes)) {
+            throw "Sürüm notu bulunamadı: $notes"
+          }
+          Write-Host "Etiket: $tag"
+          Write-Host "Sürüm notu: $notes"
+
+      - name: Test
+        env:
+          APTOZA_SKIP_SCREEN_TEST: "1"
+        run: cargo test --all-targets -- --test-threads=1
+
+      - name: Build release
+        run: cargo build --release --locked
+
+      - name: Package ZIP
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $tag = $env:GITHUB_REF_NAME
+          $version = $tag.TrimStart("v")
+          $name = "AptozaQ3-$version-windows-x64"
+          $dir = Join-Path "dist" $name
+
+          if (Test-Path "dist") {
+            Remove-Item "dist" -Recurse -Force
+          }
+          New-Item -ItemType Directory -Force -Path $dir | Out-Null
+
+          Copy-Item "target/release/aptoza.exe" (Join-Path $dir "AptozaQ3.exe")
+          Copy-Item "README.md", "LICENSE", "KULLANIM_KILAVUZU.md", `
+            "CHANGELOG.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", `
+            "SECURITY.md", "SUPPORT.md", "ACKNOWLEDGEMENTS.md" $dir
+          Copy-Item "docs" $dir -Recurse
+
+          $zip = Join-Path "dist" "$name.zip"
+          Compress-Archive -Path (Join-Path $dir "*") -DestinationPath $zip -Force
+
+          $hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLower()
+          "$hash  ${name}.zip" | Set-Content -Path "dist/SHA256SUMS.txt" -Encoding ascii
+
+          Write-Host "Oluşturulan paket:"
+          Get-ChildItem "dist" | Select-Object Name, Length
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: AptozaQ3 ${{ github.ref_name }}
+          body_path: docs/releases/${{ github.ref_name }}.md
+          files: |
+            dist/*.zip
+            dist/SHA256SUMS.txt
+          fail_on_unmatched_files: true
+          generate_release_notes: false
+          draft: false
+          prerelease: false
+          make_latest: true

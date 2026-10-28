@@ -1,0 +1,21 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{yml,yaml,json}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{ps1,bat,cmd}]
+end_of_line = crlf
+
+[*.{png,jpg,jpeg,gif,webp,tiff,bmp,ico,mp4,mkv,mov,avi,webm,mp3,wav,ogg,flac,zip}]
+insert_final_newline = false

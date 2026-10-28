@@ -1,0 +1,87 @@
+name: ✨ Özellik önerisi
+description: Yeni bir özellik veya iyileştirme önerin.
+title: "[Feature]: "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Öneriniz için teşekkürler. Lütfen önerinin hangi sorunu çözdüğünü ve
+        nasıl bir kullanıcı deneyimi istediğinizi açıklayın.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Çözmek istediğiniz sorun
+      description: Hangi durumda zorlanıyorsunuz? Mevcut davranış nedir?
+      placeholder: "Örneğin: Uzun kayıtlarda ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önerilen çözüm
+      description: Nasıl bir özellik/akış istiyorsunuz?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Düşündüğünüz alternatifler
+      description: Başka çözümler veya geçici çalışma yolları.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: İlgili alan
+      options:
+        - Ekran kaydı
+        - Ses / mikrofon
+        - Webcam
+        - Çizim / overlay
+        - Timeline / dışa aktarma
+        - Ses editörü
+        - Video araçları
+        - Görselden video
+        - Ayarlar / kısayollar
+        - Arayüz / tema
+        - Dokümantasyon
+        - Diğer
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Sizin için öncelik
+      options:
+        - Düşük
+        - Orta
+        - Yüksek
+        - Kritik
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Ek bilgi
+      description: Ekran görüntüsü, örnek dosya, referans bağlantı vb.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Kontrol listesi
+      options:
+        - label: Benzer bir öneri olup olmadığını aradım.
+          required: true
+        - label: Bu öneri bir güvenlik açığı bildirimi içermiyor.
+          required: true

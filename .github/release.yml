@@ -1,0 +1,30 @@
+changelog:
+  exclude:
+    labels:
+      - dependencies
+      - skip-changelog
+  categories:
+    - title: "🚀 Özellikler"
+      labels:
+        - enhancement
+        - feature
+    - title: "🐞 Hata düzeltmeleri"
+      labels:
+        - bug
+        - fix
+    - title: "🔐 Güvenlik"
+      labels:
+        - security
+    - title: "⚡ Performans"
+      labels:
+        - performance
+    - title: "📚 Dokümantasyon"
+      labels:
+        - documentation
+    - title: "🧰 Bakım"
+      labels:
+        - chore
+        - github-actions
+    - title: "Diğer değişiklikler"
+      labels:
+        - "*"

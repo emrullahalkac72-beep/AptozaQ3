@@ -1,0 +1,53 @@
+name: ❓ Soru
+description: Kullanım veya davranış hakkında soru sorun.
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Soru sormadan önce [SSS](https://github.com/emralkac21/AptozaQ3/blob/main/docs/FAQ.md)
+        ve [Sorun Giderme](https://github.com/emralkac21/AptozaQ3/blob/main/docs/TROUBLESHOOTING.md)
+        belgelerine göz atın.
+        Hata bildirimi için **Bug report**, özellik için **Feature request** kullanın.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Sorunuz
+      description: Ne yapmak istiyorsunuz ve nerede takıldınız?
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: AptozaQ3 sürümü
+      placeholder: "1.0.6"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: İşletim sistemi
+      placeholder: "Windows 11 23H2, 64-bit"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: Denedikleriniz
+      description: Hangi adımları denediniz? Sonuç ne oldu?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Ek bilgi
+      description: Ekran görüntüsü, log veya bağlantı ekleyin.
+    validations:
+      required: false

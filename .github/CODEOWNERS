@@ -1,0 +1,21 @@
+# CODEOWNERS
+
+# Varsayılan sahip
+* @emralkac21
+
+# CI, release ve topluluk dosyaları
+/.github/ @emralkac21
+
+# Dokümantasyon
+/docs/ @emralkac21
+README.md @emralkac21
+KULLANIM_KILAVUZU.md @emralkac21
+CHANGELOG.md @emralkac21
+
+# Uygulama kaynakları
+/src/ @emralkac21
+Cargo.toml @emralkac21
+Cargo.lock @emralkac21
+
+# Betikler
+/scripts/ @emralkac21

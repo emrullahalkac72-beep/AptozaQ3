@@ -1,0 +1,47 @@
+# Kaynak ve metin dosyalarında tutarlı satır sonları
+* text=auto eol=lf
+
+*.rs        text eol=lf
+*.toml      text eol=lf
+*.lock      text eol=lf
+*.md        text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.json      text eol=lf
+*.cff       text eol=lf
+*.svg       text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+*.editorconfig  text eol=lf
+
+# Windows betikleri CRLF
+*.ps1       text eol=crlf
+*.bat       text eol=crlf
+*.cmd       text eol=crlf
+
+# İkili dosyalar
+*.ico       binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.webp      binary
+*.tiff      binary
+*.bmp       binary
+*.mp4       binary
+*.mkv       binary
+*.mov       binary
+*.avi       binary
+*.webm      binary
+*.mp3       binary
+*.wav       binary
+*.ogg       binary
+*.flac      binary
+*.zip       binary
+*.7z        binary
+*.exe       binary
+*.dll       binary
+
+# GitHub dil istatistiklerinde gürültüyü azalt
+Cargo.lock  linguist-generated=false
+docs/assets/* linguist-documentation

@@ -1,0 +1,119 @@
+name: 🐞 Hata bildirimi
+description: Bir hata veya beklenmeyen davranış bildirin.
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hata bildirimi için teşekkürler. Lütfen aşağıdaki alanları doldurun.
+        Güvenlik açıklarını **bu formla açmayın**; [SECURITY.md](https://github.com/emralkac21/AptozaQ3/blob/main/SECURITY.md) kullanın.
+
+  - type: input
+    id: version
+    attributes:
+      label: AptozaQ3 sürümü
+      description: Uygulama sürümü veya release etiketi.
+      placeholder: "1.0.6"
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows sürümü
+      description: "Örnek: Windows 11 23H2, 64-bit (winver çıktısı)"
+      placeholder: "Windows 11 23H2, 64-bit"
+    validations:
+      required: true
+
+  - type: input
+    id: ffmpeg
+    attributes:
+      label: FFmpeg sürümü
+      description: "`ffmpeg -version` çıktısının ilk satırı"
+      placeholder: "ffmpeg version 7.1 ..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Etkilenen alan
+      options:
+        - Ekran kaydı
+        - Ses / mikrofon
+        - Webcam
+        - Çizim / overlay
+        - Timeline / dışa aktarma
+        - Ses editörü
+        - Video araçları
+        - Görselden video
+        - Ayarlar / kısayollar
+        - Kurulum / derleme
+        - Diğer
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Yeniden üretme adımları
+      description: Hatayı en kısa biçimde tetikleyen adımlar.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen davranış
+      placeholder: Ne olmasını bekliyordunuz?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Gerçek davranış
+      description: Hata mesajı, siyah ekran, çökme vb.
+      placeholder: Ne oldu?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log / FFmpeg çıktısı
+      description: Varsa hata çıktısının son satırları. Uzun çıktıları dosya olarak ekleyin.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Ekran görüntüsü / video
+      description: Görsel kanıt varsa sürükleyip bırakın.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Kontrol listesi
+      options:
+        - label: Aynı hatayı bildiren mevcut bir issue olup olmadığını aradım.
+          required: true
+        - label: En son sürümü kullanıyorum.
+          required: true
+        - label: FFmpeg'in `PATH`'te olduğunu doğruladım.
+          required: false
+        - label: Bu bildirim bir güvenlik açığı içermiyor.
+          required: true

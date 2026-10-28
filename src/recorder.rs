@@ -1263,6 +1263,11 @@ mod tests {
 
     #[test]
     fn record_screen_short_clip() {
+        // CI ve uzak masaüstü oturumlarında etkileşimli ekran yakalama olmayabilir.
+        if std::env::var_os("APTOZA_SKIP_SCREEN_TEST").is_some() {
+            eprintln!("APTOZA_SKIP_SCREEN_TEST ayarlı; ekran kaydı testi atlandı.");
+            return;
+        }
         let dir = std::env::temp_dir().join("aptoza_record_test");
         let _ = std::fs::remove_dir_all(&dir);
         std::fs::create_dir_all(&dir).unwrap();

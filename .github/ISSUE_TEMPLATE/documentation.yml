@@ -1,0 +1,41 @@
+name: 📚 Dokümantasyon
+description: Eksik, yanlış veya güncel olmayan bir belgeyi bildirin.
+title: "[Docs]: "
+labels:
+  - documentation
+  - needs-triage
+body:
+  - type: input
+    id: page
+    attributes:
+      label: İlgili dosya / sayfa
+      description: README, docs/... veya KULLANIM_KILAVUZU.md
+      placeholder: "docs/SHORTCUTS.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Sorun
+      description: Hangi bilgi eksik, yanlış veya güncel değil?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Önerilen düzeltme
+      description: Doğru bilgi veya önerdiğiniz metin.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Kontrol listesi
+      options:
+        - label: İlgili belgeyi en son sürümde kontrol ettim.
+          required: true
+        - label: Bu bildirim bir güvenlik açığı içermiyor.
+          required: true

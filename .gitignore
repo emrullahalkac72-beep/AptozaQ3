@@ -1,0 +1,100 @@
+# ---------------------------------------------------------------
+# Rust / Cargo
+# ---------------------------------------------------------------
+/target/
+**/*.rs.bk
+*.pdb
+*.ilk
+*.exp
+*.obj
+*.o
+*.a
+*.lib
+*.d
+*.rmeta
+*.rlib
+*.dylib
+*.so
+*.dll
+*.exe
+
+# Cargo.lock bu depoda bilinçli olarak takip edilir (uygulama projesi).
+
+# ---------------------------------------------------------------
+# Derleme / paketleme çıktıları
+# ---------------------------------------------------------------
+/dist/
+/out/
+/release/
+/artifacts/
+*.zip
+*.7z
+*.msi
+*.msix
+*.nupkg
+*.deb
+*.rpm
+*.dmg
+*.pkg
+*.AppImage
+
+# ---------------------------------------------------------------
+# Yerel uygulama verileri
+# ---------------------------------------------------------------
+.ekran_kayit_pro.json
+.aptoza_timeline_autosave.aptproj
+*.aptproj
+*_ffmpeg_err.log
+kayit_*.mp4
+kayit_*_v.mp4
+kayit_*_a.wav
+kayit_*_a.raw
+aptoza_*.log
+*.tmp
+
+# Testlerin ürettiği geçici medya
+aptoza_*_test/
+test-output/
+coverage/
+*.profraw
+*.profdata
+
+# ---------------------------------------------------------------
+# Editörler / IDE'ler
+# ---------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.iml
+.fleet/
+.zed/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------
+# İşletim sistemi
+# ---------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ---------------------------------------------------------------
+# Ortam / sırlar
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*

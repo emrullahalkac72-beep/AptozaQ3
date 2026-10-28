@@ -35,6 +35,7 @@ Uygulama **Rust + egui/eframe** ile geliştirilmiştir. Medya işleme için sist
 - [Kurulum](#kurulum)
 - [Hızlı başlangıç](#hızlı-başlangıç)
 - [Kullanım alanları](#kullanım-alanları)
+- [Ayrıntılı kullanım kılavuzu](KULLANIM_KILAVUZU.md)
 - [Kısayollar](#kısayollar)
 - [Dosya ve klasörler](#dosya-ve-klasörler)
 - [Proje yapısı](#proje-yapısı)
@@ -44,6 +45,7 @@ Uygulama **Rust + egui/eframe** ile geliştirilmiştir. Medya işleme için sist
 - [Katkı sağlama](#katkı-sağlama)
 - [Güvenlik](#güvenlik)
 - [Lisans](#lisans)
+- [Sürüm geçmişi](#sürüm-geçmişi)
 
 ## Özellikler
 
@@ -175,6 +177,14 @@ Uygulamanın birincil hedefi Windows'tur. Linux/macOS üzerinde derleme mümkün
 3. Arşivi bir klasöre çıkarın.
 4. FFmpeg'in `PATH`'te olduğundan emin olun.
 5. `AptozaQ3.exe` dosyasını çalıştırın.
+
+İndirilen arşivi doğrulamak için:
+
+```powershell
+Get-FileHash .\AptozaQ3-1.0.6-windows-x64.zip -Algorithm SHA256
+```
+
+Değeri release'deki `SHA256SUMS.txt` ile karşılaştırın.
 
 > Depo şu anda kurulum paketi (MSI/NSIS) içermez; taşınabilir ZIP dağıtımı kullanılır.
 
@@ -385,11 +395,18 @@ Güvenlik açıklarını herkese açık issue olarak bildirmeyin. Özel bildirim
 
 **https://github.com/emralkac21/AptozaQ3/security/advisories/new**
 
-Ayrıntılar: **[SECURITY.md](SECURITY.md)**
+Ayrıntılar: **[SECURITY.md](SECURITY.md)**  
+Gizlilik: **[docs/PRIVACY.md](docs/PRIVACY.md)**
 
 ## Lisans
 
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Ayrıntılar: **[LICENSE](LICENSE)**
+
+## Sürüm geçmişi
+
+- Güncel sürüm notları: **[v1.0.6](docs/releases/v1.0.6.md)**
+- Tüm değişiklikler: **[CHANGELOG.md](CHANGELOG.md)**
+- Yayınlanan sürümler: **[GitHub Releases](https://github.com/emralkac21/AptozaQ3/releases)**
 
 ## İletişim ve bağlantılar
 
