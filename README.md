@@ -175,7 +175,7 @@ Uygulamanın birincil hedefi Windows'tur. Linux/macOS üzerinde derleme mümkün
 3. FFmpeg'in `PATH`'te olduğundan emin olun.
 4. İndirilen `.exe` dosyasını çalıştırın.
 
-> Kaynak kodu `1.0.6` sürümündedir, ancak bu sürüm için henüz bir GitHub
+> Kaynak kodu `1.0.0` sürümündedir, ancak bu sürüm için henüz bir GitHub
 > Release yayımlanmamıştır. Güncel sürümü kullanmak için aşağıdaki kaynaktan
 > derleme adımlarını izleyin. Henüz yayımlanmış bir SHA256 checksum dosyası
 > yoktur.
@@ -396,7 +396,7 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır. Ayrıntılar: **[LICENSE](LICE
 
 ## Sürüm geçmişi
 
-- Kaynak kodu `1.0.6` sürüm notları: **[v1.0.6](docs/releases/v1.0.6.md)**
+- Kaynak kodu `1.0.0` sürüm notları: **[v1.0.0](docs/releases/v1.0.0.md)**
 - Tüm değişiklikler: **[CHANGELOG.md](CHANGELOG.md)**
 - Yayınlanan sürümler: **[GitHub Releases](https://github.com/emrullahalkac72-beep/AptozaQ3/releases)**
 
